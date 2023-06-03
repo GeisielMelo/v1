@@ -1,0 +1,49 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                                  Navbar                                    */
+/* ////////////////////////////////////////////////////////////////////////// */
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: silver;
+}
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 50px;
+    background-color: wheat;
+}
+.navbar nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 25px;
+    list-style: none;
+}
+.navbar nav ul li {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    height: 40px;
+}
+.navbar nav ul p {
+    padding-right: 5px;
+}
+.navbar nav button {
+    height: 40px;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                                  Hero                                      */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.hero {
+    margin-top: 50px;
+    width: 100vh;
+    margin: 10% 30% 20% 30%;
+}
