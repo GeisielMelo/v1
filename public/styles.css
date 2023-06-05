@@ -15,6 +15,7 @@ section {
 /* ////////////////////////////////////////////////////////////////////////// */
 .navbar {
     position: fixed;
+    z-index: 2;
     width: 100%;
     top: 0px;
     transition: top 0.2s ease;
@@ -137,17 +138,123 @@ h3 {
 }
 
 /* ////////////////////////////////////////////////////////////////////////// */
-/*                                  Sections                                  */
+/*                                     Featured                               */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+#featured .right-content,
+#featured .left-content {
+    display: flex;
+    position: relative;
+}
+
+#featured .right-content {
+    margin-top: 100px;
+}
+
+#featured .left-content {
+    margin-bottom: 100px;
+}
+
+#featured .right-image,
+#featured .left-image {
+    width: 600px;
+}
+
+#featured .right-image img,
+#featured .left-image img {
+    width: 600px;
+}
+
+#featured .right-description,
+#featured .left-description {
+    width: 400px;
+}
+
+#featured .right-description p,
+#featured .left-description p {
+    background-color: silver;
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+}
+
+#featured .left-description p {
+    left: 0;
+}
+
+#featured .right-description p {
+    right: 0;
+}
+
+#featured h1 {
+    margin-top: 100px;
+}
+#featured h2 {
+    margin-top: 1   0px;
+}
+
+#featured ul {
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                                  projects                                  */
 /* ////////////////////////////////////////////////////////////////////////// */
 
 #projects {
-    background-color: blue;
-    height: 100vh;
+    height: auto;
 }
 
-#see-more {
-    background-color: blueviolet;
-    height: 100vh;
+#projects .title-projects {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#projects .cards-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#projects .card {
+    margin: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    background-color: coral;
+}
+
+#projects .card .card-content {
+    padding: 20px;
+}
+
+#projects .card .card-content div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects .card .card-content h2 {
+    margin: 10px 0px;
+}
+
+#projects .card .card-tools ul {
+    display: flex;
+    padding: 0px 20px 20px 20px;
+}
+
+#projects .card .card-tools ul li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+#projects .more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 /* ////////////////////////////////////////////////////////////////////////// */
@@ -159,7 +266,9 @@ h3 {
     max-width: 600px;
 }
 
-#contact div {
+#contact {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
