@@ -5,7 +5,7 @@
 }
 
 section {
-    margin: 0px auto;
+    margin: 100px auto;
     max-width: 1000px;
     padding: 100px 0px;
 }
@@ -15,7 +15,7 @@ section {
 /* ////////////////////////////////////////////////////////////////////////// */
 .navbar {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     top: 0px;
     transition: top 0.2s ease;
@@ -135,68 +135,6 @@ h3 {
 
 #about .grid-tech div ul li {
     padding: 0 10px;
-}
-
-/* ////////////////////////////////////////////////////////////////////////// */
-/*                                     Featured                               */
-/* ////////////////////////////////////////////////////////////////////////// */
-
-#featured .right-content,
-#featured .left-content {
-    display: flex;
-    position: relative;
-}
-
-#featured .right-content {
-    margin-top: 100px;
-}
-
-#featured .left-content {
-    margin-bottom: 100px;
-}
-
-#featured .right-image,
-#featured .left-image {
-    width: 600px;
-}
-
-#featured .right-image img,
-#featured .left-image img {
-    width: 600px;
-}
-
-#featured .right-description,
-#featured .left-description {
-    width: 400px;
-}
-
-#featured .right-description p,
-#featured .left-description p {
-    background-color: silver;
-    width: 500px;
-    position: absolute;
-    z-index: 1;
-}
-
-#featured .left-description p {
-    left: 0;
-}
-
-#featured .right-description p {
-    right: 0;
-}
-
-#featured h1 {
-    margin-top: 100px;
-}
-#featured h2 {
-    margin-top: 1   0px;
-}
-
-#featured ul {
-    display: flex;
-    position: absolute;
-    bottom: 100px;
 }
 
 /* ////////////////////////////////////////////////////////////////////////// */
