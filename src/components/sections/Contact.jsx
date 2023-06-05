@@ -6,11 +6,9 @@ import Button from "../contact/Button";
 const Contact = () => {
   return (
     <section id="contact">
-      <div>
         <Title/>
         <Content />
         <Button />
-      </div>
     </section>
   );
 };
