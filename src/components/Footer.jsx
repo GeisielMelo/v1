@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div class="left-contact-box"></div>
-      <div class="right-contact-box"></div>
+      <div className="left-contact-box"></div>
+      <div className="right-contact-box"></div>
       <footer>
         <p>&copy; Geisiel Melo</p>
       </footer>
