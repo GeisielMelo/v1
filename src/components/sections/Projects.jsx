@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Card";
+import data from "../../utils/data";
 
 const Projects = () => {
   return (
@@ -9,13 +10,20 @@ const Projects = () => {
         <h2>view the archive</h2>
       </div>
       <div className="cards-area">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {data.map((item) => (
+          <Card
+            key={item.title}
+            title={item.title}
+            description={item.description}
+            technologies={item.technologies}
+            live={item.liveLink}
+            github={item.gitLink}
+          />
+        ))}
       </div>
-      <div className="more-button"><button>More</button></div>
+      <div className="more-button">
+        <button>More</button>
+      </div>
     </section>
   );
 };

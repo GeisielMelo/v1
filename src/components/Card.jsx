@@ -1,27 +1,50 @@
 import React from "react";
 import FolderIcon from "@mui/icons-material/Folder";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
-const Card = () => {
+const Card = (props) => {
+  const gitLink = props.github;
+  const liveLink = props.live;
+
+  const handleLiveButtonClick = () => {
+    window.open(liveLink, "_blank");
+  };
+
+  const handleGitButtonClick = () => {
+    window.open(gitLink, "_blank");
+  };
+
   return (
     <div className="card">
-      <div className="card-content">
+      <div className="card-buttons">
         <div>
           <FolderIcon />
-          <button>
-            <OpenInNewIcon />
-          </button>
         </div>
-        <h2>This is a title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div>
+          {gitLink !== null && (
+            <button onClick={handleGitButtonClick}>
+              <GitHubIcon />
+            </button>
+          )}
+          {liveLink !== null && (
+            <button onClick={handleLiveButtonClick}>
+              <OpenInNewIcon />
+            </button>
+          )}
+        </div>
+      </div>
+
+      <div className="card-content">
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
       </div>
 
       <div className="card-tools">
         <ul>
-          <li>Node</li>
-          <li>TypeScript</li>
-          <li>Express</li>
-          <li>React</li>
+          {props.technologies.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
         </ul>
       </div>
     </div>
