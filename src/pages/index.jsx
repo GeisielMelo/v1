@@ -6,6 +6,7 @@ import Featured from "../components/sections/Featured";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/Footer";
+import data from "../utils/data"
 
 const Index = () => {
   return (
@@ -14,8 +15,8 @@ const Index = () => {
       <div id="main">
         <Hero />
         <About />
-        <Featured />
-        <Projects />
+        <Featured data={data} />
+        <Projects data={data} />
         <Contact />
       </div>
       <Footer />

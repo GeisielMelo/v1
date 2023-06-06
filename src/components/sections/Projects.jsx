@@ -1,8 +1,7 @@
 import React from "react";
 import Card from "../Card";
-import data from "../../utils/data";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
     <section id="projects">
       <div className="title-projects">
@@ -10,7 +9,7 @@ const Projects = () => {
         <h2>view the archive</h2>
       </div>
       <div className="cards-area">
-        {data.map((item) => (
+        {props.data.map((item) => (
           <Card
             key={item.title}
             title={item.title}
