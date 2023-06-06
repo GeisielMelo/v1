@@ -1,5 +1,8 @@
 :root {
     --footer: #6096B4;
+    --font-sm: 14px;
+    --font-md: 24px;
+    --font-bg: 32px;
 }
 
 * {
@@ -9,12 +12,10 @@
 }
 
 section {
-    margin: 100px 100px;
+    margin: 0 100px;
     max-width: 1000px;
     padding: 100px 0px;
 }
-
-
 
 #main {
     display: flex;
@@ -59,6 +60,149 @@ section {
 
 #navbar ul .li-button {
     list-style: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                                  Hero                                      */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+#hero {
+    background-color: wheat;
+    height: 100vh;
+}
+
+#hero h1 {
+    margin: 0px 0px 30px 4px;
+    font-size: clamp(14px, 5vw, 16px);
+    font-weight: 400;
+    padding-top: 100px;
+}
+
+#hero h2,
+h3 {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+#hero p {
+    margin: 20px 0px 0px;
+    max-width: 540px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                                  About                                     */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+#about .about-container {
+    display: flex;
+    gap: 25px;
+}
+
+#about .grid-tech{
+    margin-top: 15px;
+}
+
+#about .about-tech {
+    display: flex;
+}
+
+#about  p {
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+#about .about-tech li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                                  Featured                                  */
+/* ////////////////////////////////////////////////////////////////////////// */
+#featured .featured-container{
+    display: flex;
+}
+
+#featured .featured-menu {
+    background-color: aquamarine;
+    max-width: 300px;
+}
+#featured .featured-preview {
+    background-color: blueviolet;
+    max-width: 600px;
+    max-height: 350px;
+
+}
+#featured ul {
+    padding: 20px;
+}
+#featured li {
+    margin-bottom: 10px;
+}
+#featured img{
+    background-color: blueviolet;
+    max-width: 600px;
+    max-height: 350px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                                  projects                                  */
+/* ////////////////////////////////////////////////////////////////////////// */
+#projects .title-projects {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#projects .cards-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#projects .card {
+    margin: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    background-color: coral;
+}
+
+#projects .card-content {
+    padding: 20px;
+}
+
+#projects .card-content div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects .card-content h2 {
+    margin: 10px 0px;
+}
+
+#projects .card-tools ul {
+    display: flex;
+    padding: 0px 20px 20px 20px;
+}
+
+#projects .card-tools ul li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+#projects .more-button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                                  Contact                                   */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+#contact {
+    display: flex;
+    text-align: center;
+    max-width: 600px;
 }
 
 /* ////////////////////////////////////////////////////////////////////////// */
