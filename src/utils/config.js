@@ -1,6 +1,6 @@
 const config = {
   navBarLogoLink: "https://img.icons8.com/ios/50/circled-g.png",
-  navBar: ["About", "Tech", "Projects", "Contact"],
+  navBar: ["About", "Tech", "Projects", "Contact",],
   navBarButton: "Resume",
   
   appTitle: "Hi, my name is",
@@ -28,7 +28,7 @@ const config = {
   contactSubtitle: "Let's work together!",
   contactMessage: "Hey there! As a junior developer, I'm on the lookout for exciting new opportunities. If you have any questions, inquiries, or if you're interested in collaborating on a project, don't hesitate to reach out. My inbox is always open, and I'd love to chat and explore how we can work together!",
   contactEmail: "geisiel.nascimento@gmail.com",
-  contactButton: "Say hi!",
+  contactButton: "Say Hello!",
 };
 
 export default config;
