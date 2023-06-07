@@ -8,8 +8,8 @@ const Contact = (props) => {
   return (
     <section id="contact">
       <div>
-        <h1>{props.subtitle}</h1>
-        <h2>{props.title}</h2>
+        <p className="subTitle">{props.subTitle}</p>
+        <h1>{props.title}</h1>
         <p>
           {props.message}
         </p>
