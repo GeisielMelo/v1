@@ -31,7 +31,7 @@ const Navbar = (props) => {
 
       <ul>
         {props.menu.map((item) => (
-          <li>{item}</li>
+          <li><span>{item}</span></li>
         ))}
         <li className="li-button">
           <button>{props.button}</button>
