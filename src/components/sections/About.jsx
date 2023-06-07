@@ -5,7 +5,7 @@ const About = (props) => {
   return (
     <section id="about">
       <div>
-        <h1>About Me</h1>
+        <h1>{props.title}</h1>
       </div>
       <div className="about-container">
         <div className="content">
@@ -17,8 +17,6 @@ const About = (props) => {
         </div>
         <div className="grid-photo">
           <img
-            width="300"
-            height="300"
             src={props.image}
             alt={props.imageAlt}
           />
