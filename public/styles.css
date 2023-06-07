@@ -67,7 +67,6 @@ section {
 /* ////////////////////////////////////////////////////////////////////////// */
 
 #hero {
-    background-color: wheat;
     height: 100vh;
 }
 
@@ -98,7 +97,12 @@ h3 {
     gap: 25px;
 }
 
-#about .grid-tech{
+#about img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#about .grid-tech {
     margin-top: 15px;
     max-width: 400px;
 }
@@ -110,19 +114,20 @@ h3 {
     row-gap: 10px;
 }
 
-#about  p {
+#about p {
     max-width: 500px;
     margin-bottom: 10px;
 }
 
-#about .about-tech li{
+#about .about-tech li {
     margin-left: 20px;
     margin-right: 10px;
 }
+
 /* ////////////////////////////////////////////////////////////////////////// */
 /*                                  Featured                                  */
 /* ////////////////////////////////////////////////////////////////////////// */
-#featured .featured-container{
+#featured .featured-container {
     display: flex;
 }
 
@@ -130,19 +135,23 @@ h3 {
     background-color: aquamarine;
     max-width: 300px;
 }
+
 #featured .featured-preview {
     background-color: blueviolet;
     max-width: 700px;
     max-height: 450px;
 
 }
+
 #featured ul {
     padding: 20px;
 }
+
 #featured li {
     margin-bottom: 10px;
 }
-#featured img{
+
+#featured img {
     background-color: blueviolet;
     max-width: 700px;
     max-height: 450px;
@@ -152,6 +161,7 @@ h3 {
     display: inline-block;
     position: relative;
 }
+
 .featured-preview-description {
     position: absolute;
     text-align: right;
@@ -258,7 +268,7 @@ h3 {
 /* ////////////////////////////////////////////////////////////////////////// */
 
 footer {
-    max-height: 100px;
+    height: 100px;
     text-align: center;
     background-color: var(--footer);
     padding: 25px;
@@ -267,7 +277,7 @@ footer {
 .left-contact-box {
     position: fixed;
     width: 45px;
-    height: 340px;
+    height: 325px;
     background-color: var(--footer);
     bottom: 0;
     left: 20px;
@@ -276,8 +286,42 @@ footer {
 .right-contact-box {
     position: fixed;
     width: 45px;
-    height: 340px;
+    height: 325px;
     background-color: var(--footer);
     bottom: 0;
     right: 20px;
+}
+
+.footer-container button {
+    width: 100%;
+    height: 50px;
+}
+
+.email-box {
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.email-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.vertical-line {
+    position: fixed;
+    background-color: white;
+    width: 2px;
+    height: 100px;
+    bottom: 0;
+}
+
+.left-line {
+    left: 40px;
+}
+
+.right-line {
+    right: 40px;
 }
