@@ -15,7 +15,7 @@ const config = {
 
   techTitle: "Here are a few technologies I’ve been working with recently:",
   tech: ["JavaScript", "NodeJS", "Python",  "React",  "Express",  "MongoDB",  "MySQL"],
-  imageLink: "https://img.icons8.com/3d-fluency/94/person-male--v5.png",
+  imageLink: "https://img.freepik.com/vector-premium/icono-doodle-logo-dibujo-perfil-masculino-aislado-sobre-fondo-oscuro_159242-392.jpg",
   imageLinkDescription: "a male person",
 
   featuredTitle: "Some projects that i build.",
