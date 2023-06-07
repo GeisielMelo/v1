@@ -5,8 +5,8 @@ const Projects = (props) => {
   return (
     <section id="projects">
       <div className="title-projects">
-        <h1>Other Noteworthy Projects</h1>
-        <h2>view the archive</h2>
+        <h1>{props.title}</h1>
+        <p>{props.subTitle}</p>
       </div>
       <div className="cards-area">
         {props.data.map((item) => (
@@ -21,7 +21,7 @@ const Projects = (props) => {
         ))}
       </div>
       <div className="more-button">
-        <button>More</button>
+        <button>{props.button}</button>
       </div>
     </section>
   );

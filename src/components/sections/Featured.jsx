@@ -31,6 +31,9 @@ const Featured = (props) => {
 
   return (
     <section id="featured">
+      <div>
+        <h1>{props.title}</h1>
+      </div>
       <div className="featured-container">
         <div className="featured-menu">
           <ul>

@@ -100,10 +100,14 @@ h3 {
 
 #about .grid-tech{
     margin-top: 15px;
+    max-width: 400px;
 }
 
 #about .about-tech {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
 }
 
 #about  p {
@@ -113,7 +117,7 @@ h3 {
 
 #about .about-tech li{
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 /* ////////////////////////////////////////////////////////////////////////// */
 /*                                  Featured                                  */

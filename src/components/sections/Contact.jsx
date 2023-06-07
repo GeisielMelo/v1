@@ -1,18 +1,19 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = (props) => {
+  const handleContactClick = () => {
+    window.location.href = `mailto:${props.email}`;
+  };
+
   return (
     <section id="contact">
       <div>
-        <h1>What’s Next?</h1>
-        <h2>Get In Touch</h2>
+        <h1>{props.subtitle}</h1>
+        <h2>{props.title}</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          repellendus id facere quibusdam a, minima, dignissimos eius
-          consequatur voluptates illo earum blanditiis quasi, ipsa ut totam
-          nihil repudiandae at accusamus.
+          {props.message}
         </p>
-        <button>Contact</button>
+        <button onClick={handleContactClick}>{props.button}</button>
       </div>
     </section>
   );
