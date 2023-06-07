@@ -52,7 +52,9 @@ const Index = () => {
           email={config.contactEmail}
         />
       </div>
-      <Footer />
+      <Footer
+        email={config.contactEmail}
+      />
     </>
   );
 };
