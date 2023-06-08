@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logo from "../images/logo.png";
 
 const Navbar = (props) => {
   const [activeClass, setActiveClass] = useState("navbar-on");
@@ -27,15 +28,18 @@ const Navbar = (props) => {
 
   return (
     <div id="navbar" className={activeClass}>
-      <img width="50" height="50" src={props.logo} alt="circled-g" />
+      <a href="#hero">
+        <img width="50" height="50" src={logo} alt="letter g" />
+      </a>
 
       <ul>
         {props.menu.map((item) => (
-          <li><span>{item}</span></li>
+          <li>
+            <a href={`#${item.toLowerCase()}`}>{item}</a>
+          </li>
         ))}
-        <li className="li-button">
-          <button>{props.button}</button>
-        </li>
+
+        <button>{props.button}</button>
       </ul>
     </div>
   );
