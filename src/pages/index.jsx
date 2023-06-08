@@ -13,7 +13,6 @@ const Index = () => {
   return (
     <>
       <Navbar
-        logo={config.navBarLogoLink}
         menu={config.navBar}
         button={config.navBarButton}
       />
