@@ -5,14 +5,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const Featured = (props) => {
   const data = props.data;
   const firstFeaturedItem = data.find((item) => item.featured === true);
-  const initialImage = firstFeaturedItem.imageLink;
 
   const [preview, setPreview] = useState({
-    imageLink: initialImage,
-    description: "",
-    technologies: [],
-    gitLink: "",
-    liveLink: "",
+    imageLink: firstFeaturedItem.imageLink,
+    description: firstFeaturedItem.description,
+    technologies: firstFeaturedItem.technologies,
+    gitLink: firstFeaturedItem.gitLink,
+    liveLink: firstFeaturedItem.liveLink,
   });
 
   const handleFeaturedItemClick = (item) => {
@@ -31,24 +30,26 @@ const Featured = (props) => {
 
   return (
     <section id="featured">
-      <div>
+      
+      <div className="horizontal-line-title">
         <h1>{props.title}</h1>
+        <div></div>
       </div>
+
       <div className="featured-container">
         <div className="featured-menu">
-          <ul>
-            {data.map((item) =>
-              item.featured === true ? (
-                <li
-                  key={item.title}
-                  onClick={() => handleFeaturedItemClick(item)}
-                >
-                  {item.title}
-                </li>
-              ) : null
-            )}
-          </ul>
+          {data.map((item) =>
+            item.featured === true ? (
+              <button
+                key={item.title}
+                onClick={() => handleFeaturedItemClick(item)}
+              >
+                {item.title}
+              </button>
+            ) : null
+          )}
         </div>
+
         <div className="featured-preview">
           <img src={preview.imageLink} alt="" />
           <div className="featured-preview-description">
