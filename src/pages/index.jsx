@@ -13,46 +13,48 @@ const Index = () => {
   return (
     <>
       <Navbar
-        menu={config.navBar}
-        button={config.navBarButton}
+        menu={config.nav.menu}
+        button={config.nav.button}
       />
       <div id="main">
         <Hero
-          title={config.appTitle}
-          name={config.name}
-          job={config.job}
-          intro={config.introduction}
+          title={config.hero.title}
+          name={config.hero.name}
+          job={config.hero.job}
+          intro={config.hero.introduction}
         />
         <About
-          title={config.aboutTitle}
-          bio={config.bio}
-          experience={config.experience}
-          conclusion={config.conclusion}
-          tech={config.tech}
-          techTitle={config.techTitle}
-          image={config.imageLink}
-          imageAlt={config.imageLinkDescription}
+          title={config.about.title}
+          bio={config.about.bio}
+          experience={config.about.experience}
+          conclusion={config.about.conclusion}
+          image={config.about.image}
+          imageAlt={config.about.imageDescription}
+
+          techTitle={config.technologies.title}
+          tech={config.technologies.tech}
         />
         <Featured
-          title={config.featuredTitle}
+          title={config.featured.title}
           data={data}
           />
         <Projects
-          title={config.projectsTitle}
-          subTitle={config.projectsSubTitle}
-          button={config.projectsButton}
+          title={config.projects.title}
+          subTitle={config.projects.subtitle}
+          button={config.projects.button}
           data={data}
         />
         <Contact
-          title={config.contactTitle}
-          subTitle={config.contactSubtitle}
-          message={config.contactMessage}
-          button={config.contactButton}
-          email={config.contactEmail}
+          title={config.contact.title}
+          subTitle={config.contact.subtitle}
+          message={config.contact.message}
+          button={config.contact.button}
+          email={config.contact.email}
         />
       </div>
       <Footer
-        email={config.contactEmail}
+        buttons={config.bottomButtons}
+        email={config.contact.email}
       />
     </>
   );
