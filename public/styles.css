@@ -126,20 +126,20 @@ button:active {
     color: var(--blue);
     border: 1px solid var(--blue);
 }
+
 /* ////////////////////////////////////////////////////////////////////////// */
 /*                                  Hero                                      */
 /* ////////////////////////////////////////////////////////////////////////// */
 
 #hero {
-    height: 100vh;
-    width: 100%;
+    height: 95vh;
+    width: 75%;
 }
 
 #hero h1 {
-    margin: 0px 0px 30px 4px;
+    margin: 100px 0px 30px 4px;
     font-size: clamp(14px, 5vw, 16px);
     font-weight: 400;
-    padding-top: 100px;
     font-family: var(--fonte-one);
     color: var(--green);
 }
@@ -147,7 +147,7 @@ button:active {
 #hero h2,
 h3 {
     margin: 0px;
-    padding: 0px;
+    padding-right: 200px;
     font-size: clamp(40px, 8vw, 80px);
     font-family: var(--font-two);
 }
@@ -159,7 +159,7 @@ h3 {
 }
 
 #hero p {
-    margin: 20px 0px 0px;
+    padding: 20px 0px;
     max-width: 540px;
     font-family: var(--font-two);
     color: var(--light-gray);
@@ -231,6 +231,7 @@ h3 {
 /* ////////////////////////////////////////////////////////////////////////// */
 /*                                  Featured                                  */
 /* ////////////////////////////////////////////////////////////////////////// */
+
 #featured {
     font-family: var(--font-two);
 }
@@ -309,6 +310,7 @@ h3 {
 /* ////////////////////////////////////////////////////////////////////////// */
 /*                                  projects                                  */
 /* ////////////////////////////////////////////////////////////////////////// */
+
 #projects {
     font-family: var(--font-two);
 }
@@ -405,6 +407,14 @@ h3 {
     border: 1px solid var(--blue);
 }
 
+@media (max-width: 845px) {
+    #projects .card {
+        margin: 5px;
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
 /* ////////////////////////////////////////////////////////////////////////// */
 /*                                  Contact                                   */
 /* ////////////////////////////////////////////////////////////////////////// */
@@ -412,7 +422,10 @@ h3 {
 #contact {
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     max-width: 600px;
+    height: 70vh;
     font-family: var(--font-two);
 }
 
@@ -457,6 +470,10 @@ footer {
     font-size: var(--font-sm);
 }
 
+footer p {
+    padding: 20px;
+}
+
 .left-contact-box {
     position: fixed;
     width: 45px;
@@ -473,7 +490,11 @@ footer {
     right: 20px;
 }
 
-.footer-container button {
+.mobile-footer-buttons button {
+    padding: 0px 20px;
+}
+
+.desktop-footer-buttons button {
     width: 100%;
     height: 50px;
 }
@@ -491,6 +512,14 @@ footer {
     color: inherit;
 }
 
+.email-box a:hover {
+    color: var(--lightest-gray);
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/*                             Vertical Bottom Lines                          */
+/* ////////////////////////////////////////////////////////////////////////// */
+
 .vertical-line {
     position: fixed;
     background-color: var(--lightest-gray);
@@ -507,7 +536,6 @@ footer {
     right: 40px;
 }
 
-
 /* ////////////////////////////////////////////////////////////////////////// */
 /*                                  scrollbar                                 */
 /* ////////////////////////////////////////////////////////////////////////// */
@@ -523,4 +551,20 @@ footer {
 ::-webkit-scrollbar-thumb {
     background-color: var(--gray);
     border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        margin: 0 25px;
+        padding: 50px 0px;
+    }
+
+    #about .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
 }
