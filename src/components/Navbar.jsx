@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import logo from "../images/logo.png";
 
 const Navbar = (props) => {
+  const menu = props.menu;
+  const button = props.button;
+
   const [activeClass, setActiveClass] = useState("navbar-on");
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
@@ -29,17 +32,19 @@ const Navbar = (props) => {
   return (
     <div id="navbar" className={activeClass}>
       <a href="#hero">
-        <img width="50" height="50" src={logo} alt="letter g" />
+        <img width="50" height="50" src={logo} alt="homepage logo" />
       </a>
 
       <ul>
-        {props.menu.map((item) => (
+        {menu.map((item) => (
           <li>
-            <a href={`#${item.toLowerCase()}`}>{item}</a>
+            <a href={item.link}>{item.name}</a>
           </li>
         ))}
 
-        <button>{props.button}</button>
+        <button onClick={() => window.open(button.link, "_blank")}>
+          {button.name}
+        </button>
       </ul>
     </div>
   );

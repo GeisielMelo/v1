@@ -2,29 +2,35 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 const Button = (props) => {
-  let buttonType;
-  let title;
+  let icon;
 
-  switch (props.type) {
-    case "github":
-      buttonType = <GitHubIcon />;
-      title = "Github";
+  switch (props.name) {
+    case "GitHub":
+      icon = <GitHubIcon />;
       break;
-    case "linkedIn":
-      buttonType = <LinkedInIcon />;
-      title = "LinkedIn";
+    case "LinkedIn":
+      icon = <LinkedInIcon />;
       break;
-    case "email":
-      buttonType = <EmailIcon />;
-      title = "Email";
+    case "Email":
+      icon = <EmailIcon />;
       break;
     default:
-      buttonType = null;
+      icon = <AddCircleOutlineIcon />;
+      break;
   }
 
-  return <button title={title}>{buttonType}</button>;
+  const handleButtonClick = (link) => {
+    window.open(link, "_blank");
+  };
+
+  return (
+    <button title={props.name} onClick={() => handleButtonClick(props.link)}>
+      {icon}
+    </button>
+  );
 };
 
 export default Button;
