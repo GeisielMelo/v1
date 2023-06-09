@@ -7,14 +7,6 @@ const Card = (props) => {
   const gitLink = props.github;
   const liveLink = props.live;
 
-  const handleLiveButtonClick = () => {
-    window.open(liveLink, "_blank");
-  };
-
-  const handleGitButtonClick = () => {
-    window.open(gitLink, "_blank");
-  };
-
   return (
     <div className="card">
       <div className="card-buttons">
@@ -23,12 +15,12 @@ const Card = (props) => {
         </div>
         <div>
           {gitLink !== null && (
-            <button onClick={handleGitButtonClick}>
+            <button onClick={() => window.open(gitLink, "_blank")}>
               <GitHubIcon />
             </button>
           )}
           {liveLink !== null && (
-            <button onClick={handleLiveButtonClick}>
+            <button onClick={() => window.open(liveLink, "_blank")}>
               <OpenInNewIcon />
             </button>
           )}
