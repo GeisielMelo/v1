@@ -1,7 +1,7 @@
 const data = [
   {
     title: "Reminders",
-    description: "",
+    description: "A practical note-taking app inspired by Google Keep that helps you keep your tasks and appointments organized.",
     technologies: ["React", "Node.js", "MongoDB", "Axios"],
     gitLink: "https://github.com/GeisielMelo/reminders",
     imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -10,7 +10,7 @@ const data = [
   },
   {
     title: "Reminders API",
-    description: "",
+    description: "Reminders API is a backend server designed specifically for the Reminders application. It handles the storage and retrieval of data, utilizing the MongoDB database hosted on Atlas.  It seamlessly integrates with the frontend application, enabling users to create, update, and retrieve their data effortlessly.",
     technologies: ["React", "Node.js", "MongoDB", "Express"],
     gitLink: "https://github.com/GeisielMelo/reminders-api",
     imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -28,7 +28,7 @@ const data = [
   },
   {
     title: "Portfolio",
-    description: "",
+    description: "My portfolio is a platform designed to facilitate communication and showcase my projects. Inspired by Brittany Chiang's design, it was completely written and developed by me. It aims to provide a clear and engaging overview of my work, skills, and experiences.",
     technologies: ["React", "Node.js", "CSS", "Express"],
     gitLink: "https://github.com/GeisielMelo/Portfolio",
     imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -37,7 +37,7 @@ const data = [
   },
   {
     title: "LandingPage",
-    description: "",
+    description: "This project consists of a Landing Page created using only HTML and CSS, with 6 sections, an animated menu, and fully responsive design.",
     technologies: ["JavaScript", "CSS", "HTML"],
     gitLink: "https://github.com/GeisielMelo/LandingPage",
     imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -46,7 +46,7 @@ const data = [
   },
   {
     title: "TinDog",
-    description: "",
+    description: "In this project, the goal is to create a landing page using the Bootstrap framework that will showcase the mobile app 'TinDog, a 'Tinder' designed specifically for dogs.",
     technologies: ["JavaScript", "CSS", "HTML", "Bootstrap"],  
     gitLink: "https://github.com/GeisielMelo/Tinder-for-Dogs",
     imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -55,7 +55,7 @@ const data = [
   },
   {
     title: "E-commerce",
-    description: "",
+    description: "This project is an e-commerce website built using Django, HTML, CSS, JavaScript, and Python. The website allows users to browse products, add them to their cart, and complete a checkout process. The project also includes an admin panel for managing products, orders, and users.",
     technologies: ["Python", "Django", "HTML", "CSS"],
     gitLink: "https://github.com/GeisielMelo/E-commerce",
     imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -64,7 +64,7 @@ const data = [
   },
   {
     title: "Simon-Game",
-    description: "",
+    description: "Every time you successfully reproduce the sequence, the game will become more challenging, adding more elements to the sequence. But be careful, if you make a mistake, the game will end and you will have to start over.",
     technologies: ["JavaScript", "CSS", "HTML"],
     gitLink: "https://github.com/GeisielMelo/Simon-Game",
     imageLink: "https://github.com/GeisielMelo/Simon-Game/raw/main/readme.png",
@@ -73,7 +73,7 @@ const data = [
   },
   {
     title: "Drum",
-    description: "",
+    description: "Drum is a simple virtual drum app built using HTML, CSS, and JavaScript. With seven different pieces to choose from, including bass drum, snare drum, hi-hat, tom, cymbal, floor tom, and cowbell, you can play the drums using your keyboard or mouse.",
     technologies: ["JavaScript", "CSS", "HTML"],
     gitLink: "https://github.com/GeisielMelo/Drum",
     imageLink: "https://github.com/GeisielMelo/Drum/raw/main/readme.png",
@@ -82,7 +82,7 @@ const data = [
   },
   {
     title: "Calculator",
-    description: "",
+    description: "Designed to handle complex mathematical functions with ease, making it the perfect tool for students.",
     technologies: ["JavaScript", "CSS", "HTML"],
     gitLink: "https://github.com/GeisielMelo/Calculator",
     imageLink: "https://github.com/GeisielMelo/Calculator/raw/main/imgCalculator.png",
@@ -91,8 +91,8 @@ const data = [
   },
   {
     title: "DNS_Flush",
-    description: "",
-    technologies: ["Python", "PySide6", "SQLite", "CSS"],
+    description: "Hey there! So, I made this little program called DNS Flush using Python that basically lets you clear your DNS cache or save a log with just a few clicks.",
+    technologies: ["Python", "PySide6", "SQLite", "Windows"],
     gitLink: "https://github.com/GeisielMelo/DNS_Flush",
     imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
     liveLink: null,
@@ -100,7 +100,7 @@ const data = [
   },
   {
     title: "SplashScreen",
-    description: "",
+    description: "This Circular Splash Screen is designed to check the existence of certain files and create them if they don't exist to ensure proper system functionality. During the verification process, a circular animation will spin on the screen to indicate that the system is being checked and to keep users informed of the verification progress.",
     technologies: ["Python", "PySide6", "SQLite", "CSS"],
     gitLink: "https://github.com/GeisielMelo/SplashScreen",
     imageLink: "https://raw.githubusercontent.com/GeisielMelo/SplashScreen/main/Screenshot.png",
@@ -109,8 +109,8 @@ const data = [
   },
   { 
     title: "EasySchedule",
-    description: "",
-    technologies: ["Python", "PySide6", "SQLite", "CSS"],
+    description: "EasySchedule is a user-friendly scheduling application designed to simplify the process of managing appointments and tasks. With a clean and intuitive interface, it allows users to easily create, organize, and track their schedules. ",
+    technologies: ["Python", "PySide6", "MySQL", "CSS"],
     gitLink: "https://github.com/GeisielMelo/EasySchedule",
     imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
     liveLink: null,

@@ -71,7 +71,7 @@ const config = {
   // Projects section texts.
   projects: {
     title: "Other Noteworthy Projects",
-    subtitle: "view the archive",
+    subtitle: "Take a look!",
     button: "See More",
   },
 
