@@ -185,6 +185,10 @@ h3 {
     font-family: var(--font-two);
 }
 
+#hero h2 {
+    white-space: nowrap;
+}
+
 #hero h3 {
     padding: 0px;
     color: var(--lightest-gray);
