@@ -90,15 +90,6 @@ const data = [
     featured: false,
   },
   {
-    title: "DNS_Flush",
-    description: "Hey there! So, I made this little program called DNS Flush using Python that basically lets you clear your DNS cache or save a log with just a few clicks.",
-    technologies: ["Python", "PySide6", "SQLite", "Windows"],
-    gitLink: "https://github.com/GeisielMelo/DNS_Flush",
-    imageLink: "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
-    liveLink: null,
-    featured: false,
-  },
-  {
     title: "SplashScreen",
     description: "This Circular Splash Screen is designed to check the existence of certain files and create them if they don't exist to ensure proper system functionality. During the verification process, a circular animation will spin on the screen to indicate that the system is being checked and to keep users informed of the verification progress.",
     technologies: ["Python", "PySide6", "SQLite", "CSS"],
