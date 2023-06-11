@@ -22,7 +22,7 @@ const config = {
     ],
     button: {
       name: "Resume",
-      link: "#",
+      link: "https://www.linkedin.com/in/geisiel-nascimento-858346265",
     },
   },
 
@@ -96,7 +96,7 @@ const config = {
     },
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/in/geisiel-nascimento-858346265",
     },
     {
       name: "Email",
