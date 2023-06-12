@@ -6,6 +6,11 @@ My portfolio is a platform designed to facilitate communication and showcase my 
 
 [Portfolio](https://bucolic-twilight-f29d0e.netlify.app/) hosted with  [Netlify](https://www.netlify.com/).
 
+
+## Preview
+![App Gif](https://github.com/GeisielMelo/Portfolio/blob/master/src/images/gif.gif?raw=true)
+
+
 ## Tech Stack
 
 - Node.js
