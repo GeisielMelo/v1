@@ -44,7 +44,7 @@ const config = {
     conclusion:
       "Sharing my applications and witnessing how they simplify people's lives motivates me greatly. I firmly believe in the positive impact of technology on society, and I'm dedicated to crafting intuitive, efficient, and enjoyable web applications.",
     image:
-      "https://img.freepik.com/vector-premium/icono-doodle-logo-dibujo-perfil-masculino-aislado-sobre-fondo-oscuro_159242-392.jpg",
+      "https://img001.prntscr.com/file/img001/Xdu4Rry7Tjy-JJOSXbVs0g.jpeg",
     imageDescription: "a male person",
   },
 
