@@ -4,7 +4,7 @@ My portfolio is a platform designed to facilitate communication and showcase my 
 
 ## Deploy
 
-[Portfolio](https://bucolic-twilight-f29d0e.netlify.app/) hosted with  [Netlify](https://www.netlify.com/).
+[Portfolio](https://geisielmelo.netlify.app/) hosted with  [Netlify](https://www.netlify.com/).
 
 
 ## Preview
