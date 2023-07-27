@@ -17,6 +17,8 @@ My portfolio is a platform designed to facilitate communication and showcase my 
 - React
 - HTML
 - CSS
+- Git
+
 
 ## Setup
 
@@ -42,6 +44,7 @@ $ npm start
 ## Author
 
 - [@GeisielMelo](https://github.com/GeisielMelo)
+- 
 
 ## License
 
