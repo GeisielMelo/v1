@@ -4,3 +4,4 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+const Node = {self.root ;self.left; self.right}
