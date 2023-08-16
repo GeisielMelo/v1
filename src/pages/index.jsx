@@ -1,13 +1,19 @@
 import React from "react";
-import styled from "styled-components";
-
-const Section = styled.section``;
+import Home from "../components/sections/Home";
+import About from "../components/sections/About";
+import Featured from "../components/sections/Featured";
+import Projects from "../components/sections/Projects";
+import Contact from "../components/sections/Contact";
 
 const Index = () => {
   return (
-    <Section>
-      <div>Hi</div>
-    </Section>
+    <>
+      <Home />
+      <About />
+      <Featured />
+      <Projects />
+      <Contact />
+    </>
   );
 };
 
