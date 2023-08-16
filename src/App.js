@@ -1,4 +1,4 @@
-import Index from "./pages/index.jsx";
+import Index from "./pages/Index";
 
 function App() {
   return <Index />;
