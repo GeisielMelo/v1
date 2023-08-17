@@ -1,38 +1,3 @@
-:root {
-  --color-one: #0a192f;
-  --color-two: #112240;
-
-  --secondary-color-one: #e6f1ff;
-  --secondary-color-two: #50fa7b;
-  --secondary-color-three: #50fa7b;
-
-    --gray: #8892b0;
-    --light-gray: #a8b2d1;
-    --lightest-gray: #ccd6f6;
-
-    --fonte-one: 'Fira Code', monospace;
-    --font-two: 'Inter var', sans-serif;
-    --font-sm: 14px;
-    --font-md: 24px;
-    --font-bg: 32px;
-}
-
-body {
-    background-color: var(--color-one);
-    color: var(--gray);
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-section {
-    margin: 0 100px;
-    max-width: 1000px;
-    padding: 100px 0px;
-}
 
 button {
     font-family: var(--fonte-one);
