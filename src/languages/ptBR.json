@@ -1,0 +1,83 @@
+{
+    "Nav": {
+      "Menu": [
+        {
+          "Name": "About",
+          "Link": "#about"
+        },
+        {
+          "Name": "Featured",
+          "Link": "#featured"
+        },
+        {
+          "Name": "Projects",
+          "Link": "#projects"
+        },
+        {
+          "Name": "Contact",
+          "Link": "#contact"
+        }
+      ],
+      "Buttons": [
+        {
+          "Name": "Resume",
+          "Link": "https://www.linkedin.com/in/geisiel-nascimento-858346265"
+        }
+      ]
+    },
+    "Hero": {
+      "Title": "Hi, my name is",
+      "Name": "Geisiel Melo",
+      "Job": "I build web applications.",
+      "Introduction": "I'm a software engineer with experience in web application development. I'm currently seeking new opportunities to apply my skills and knowledge. With a special focus on creating accessible and user-centric solutions, I am committed to building products that stand out and provide amazing experiences for users."
+    },
+    "About": {
+      "Title": "About Me",
+      "Bio": "Hello, I'm Geisiel Melo, and I love coding and problem-solving. My programming journey began with configuring custom mods and servers for online games, bringing enjoyment to my friends and me. Over time, I ventured into creating scripts to automate tasks and eventually developed full-fledged applications for complex challenges.",
+      "Experience": "As I delved into app development, I discovered my passion for creating solutions that benefit others. This led me to focus on web application development, aiming to provide accessible and user-friendly experiences to a broader audience.",
+      "Conclusion": "Sharing my applications and witnessing how they simplify people's lives motivates me greatly. I firmly believe in the positive impact of technology on society, and I'm dedicated to crafting intuitive, efficient, and enjoyable web applications.",
+      "Image": "https://img001.prntscr.com/file/img001/Xdu4Rry7Tjy-JJOSXbVs0g.jpeg",
+      "ImageDescription": "a male person"
+    },
+    "Technologies": {
+      "Title": "Here are some of the technologies I've worked with:",
+      "Tech": [
+        "JavaScript",
+        "NodeJS",
+        "Python",
+        "React",
+        "Express",
+        "MongoDB",
+        "MySQL"
+      ]
+    },
+    "Featured": {
+      "Title": "Featured Projects"
+    },
+    "Projects": {
+      "Title": "Other Noteworthy Projects",
+      "Subtitle": "Take a look!",
+      "Button": "See More"
+    },
+    "Contact": {
+      "Title": "Contact Me",
+      "Subtitle": "Let's work together!",
+      "Message": "Hey there! As a junior developer, I'm on the lookout for exciting new opportunities. If you have any questions, inquiries, or if you're interested in collaborating on a project, don't hesitate to reach out. My inbox is always open, and I'd love to chat and explore how we can work together!",
+      "Email": "geisiel.nascimento@gmail.com",
+      "Button": "Say Hello!"
+    },
+    "BottomButtons": [
+      {
+        "Name": "GitHub",
+        "Link": "https://github.com/geisielmelo"
+      },
+      {
+        "Name": "LinkedIn",
+        "Link": "https://www.linkedin.com/in/geisiel-nascimento-858346265"
+      },
+      {
+        "Name": "Email",
+        "Link": "mailto:geisiel.nascimento@gmail.com"
+      }
+    ]
+  }

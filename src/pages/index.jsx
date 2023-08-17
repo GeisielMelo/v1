@@ -5,7 +5,7 @@ import About from "../components/sections/About";
 import Featured from "../components/sections/Featured";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
-import { fetchAppData } from "../services/fetchAppData";
+import { fetchData } from "../utils/fetchData";
 
 const Wrapper = styled.div`
   display: flex;
@@ -16,30 +16,29 @@ const Wrapper = styled.div`
 
 const Index = () => {
   const [data, setData] = useState(null);
+  const [language, setLanguage] = useState("enUS");
 
   useEffect(() => {
-    const fetchData = async () => {
-      if (!data) {
-        try {
-          const response = await fetchAppData();
-          setData(response);
-        } catch (error) {
-          console.log(error);
-        }
-      }
-    };
-
-    fetchData();
-  }, [data]);
+    try {
+      const response = fetchData(language);
+      setData(response);
+    } catch (error) {
+      console.log(error);
+    }
+  }, [language]);
 
   return (
-    <Wrapper>
-      <Home />
-      <About />
-      <Featured />
-      <Projects />
-      <Contact />
-    </Wrapper>
+    data ? (
+      <Wrapper>
+        <Home settings={data.Hero} />
+        <About settings={data.About} />
+        <Featured settings={data.Featured} />
+        <Projects settings={data.Projects} />
+        <Contact settings={data.Contact} />
+      </Wrapper>
+    ) : (
+      <p>Loading...</p>
+    )
   );
 };
 
