@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import Home from "../components/sections/Home";
 import About from "../components/sections/About";
 import Featured from "../components/sections/Featured";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 import { fetchData } from "../utils/fetchData";
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+import { Wrapper } from "../components/StyledComponents";
 
 const Index = () => {
   const [data, setData] = useState(null);
@@ -27,18 +20,16 @@ const Index = () => {
     }
   }, [language]);
 
-  return (
-    data ? (
-      <Wrapper>
-        <Home settings={data.Hero} />
-        <About settings={data.About} />
-        <Featured settings={data.Featured} />
-        <Projects settings={data.Projects} />
-        <Contact settings={data.Contact} />
-      </Wrapper>
-    ) : (
-      <p>Loading...</p>
-    )
+  return data ? (
+    <Wrapper>
+      <Home settings={data.Hero} />
+      <About settings={data.About} />
+      <Featured settings={data.Featured} />
+      <Projects settings={data.Projects} />
+      <Contact settings={data.Contact} />
+    </Wrapper>
+  ) : (
+    <p>Loading...</p>
   );
 };
 
