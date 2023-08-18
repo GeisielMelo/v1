@@ -24,7 +24,7 @@ const Index = () => {
   return data ? (
     <Wrapper>
       <Hero settings={data.Hero} />
-      <About settings={data.About} />
+      <About settings={data.About} tech={data.Technologies} />
       <Featured settings={data.Featured} />
       <Projects settings={data.Projects} />
       <Contact settings={data.Contact} />
