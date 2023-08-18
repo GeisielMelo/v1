@@ -32,5 +32,11 @@ export const theme = {
       sm: "14px",
       es: "10px",
     },
+    weight: {
+      light: 300,
+      regular: 400,
+      bold: 700,
+      black: 900,
+    }
   },
 };
