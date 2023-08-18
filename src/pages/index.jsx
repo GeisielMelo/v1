@@ -6,7 +6,7 @@ import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import { fetchData } from "../utils/fetchData";
-import { Wrapper } from "../components/StyledComponents";
+import { Wrapper } from "../components/Wrapper";
 
 const Index = () => {
   const [data, setData] = useState(null);
@@ -25,7 +25,7 @@ const Index = () => {
     <Wrapper>
       <Hero settings={data.Hero} />
       <About settings={data.About} tech={data.Technologies} />
-      <Featured settings={data.Featured} />
+      <Featured settings={data.Featured} data={data.Data} />
       <Projects settings={data.Projects} />
       <Contact settings={data.Contact} />
       <Footer name={data.Hero.Name}/>
