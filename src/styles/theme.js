@@ -16,7 +16,7 @@ export const theme = {
       Lightest: "",
     },
     Green: {
-      default: "#64ffda",
+      default: "#50fa7b",
       Light: "",
       Lightest: "",
     },
