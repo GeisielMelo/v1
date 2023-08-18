@@ -10,12 +10,6 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
 }
 
-section {
-    margin: 0 100px;
-    max-width: 1000px;
-    padding: 100px 0px;
-}
-
 body {
     background: linear-gradient(90deg,
       ${(props) => props.theme.color.Navy.default},
@@ -45,13 +39,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: none;
+  background: ${(props) => props.theme.color.Navy.default}
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: ${(props) => props.theme.color.Slate.default};
     border-radius: 4px;
 } 
-`;
+`
 
 export default GlobalStyle;
