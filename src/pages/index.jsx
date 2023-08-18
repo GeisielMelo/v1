@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Home from "../components/sections/Home";
+import Hero from "../components/sections/Hero";
 import About from "../components/sections/About";
 import Featured from "../components/sections/Featured";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
+import Footer from "../components/sections/Footer";
 import { fetchData } from "../utils/fetchData";
 import { Wrapper } from "../components/StyledComponents";
 
@@ -22,15 +23,16 @@ const Index = () => {
 
   return data ? (
     <Wrapper>
-      <Home settings={data.Hero} />
+      <Hero settings={data.Hero} />
       <About settings={data.About} />
       <Featured settings={data.Featured} />
       <Projects settings={data.Projects} />
       <Contact settings={data.Contact} />
+      <Footer name={data.Hero.Name}/>
     </Wrapper>
   ) : (
     <p>Loading...</p>
-  );
-};
+  )
+}
 
 export default Index;
