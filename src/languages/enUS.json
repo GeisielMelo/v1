@@ -79,5 +79,115 @@
       "Name": "Email",
       "Link": "mailto:geisiel.nascimento@gmail.com"
     }
+  ],
+  "Data": [
+    {
+      "Title": "Reminders",
+      "Description": "A practical note-taking app inspired by Google Keep that helps you keep your tasks and appointments organized.",
+      "Technologies": ["React", "Node.js", "MongoDB", "Axios"],
+      "GitLink": "https://github.com/GeisielMelo/reminders",
+      "ImageLink": "https://img001.prntscr.com/file/img001/-vheMMlIQYmFefa_IeL9YA.png",
+      "LiveLink": null,
+      "Featured": true
+    },
+    {
+      "Title": "Reminders API",
+      "Description": "Reminders API is a backend server designed specifically for the Reminders application. It handles the storage and retrieval of data, utilizing the MongoDB database hosted on Atlas. It seamlessly integrates with the frontend application, enabling users to create, update, and retrieve their data effortlessly.",
+      "Technologies": ["React", "Node.js", "MongoDB", "Express"],
+      "GitLink": "https://github.com/GeisielMelo/reminders-api",
+      "ImageLink": "https://img001.prntscr.com/file/img001/QsJpQFvsRICcKfkGZ5r3RA.png",
+      "LiveLink": null,
+      "Featured": true
+    },
+    {
+      "Title": "E-mail Marketing",
+      "Description": "This is a application that receives user data and saves it directly to a Mailchimp database, aiming to simplify and streamline the process of creating and sending email marketing campaigns.",
+      "Technologies": ["Bootstrap", "Express", "Node", "CSS"],
+      "GitLink": "https://github.com/GeisielMelo/Email-Marketing",
+      "ImageLink": "https://github.com/GeisielMelo/Email-Marketing/raw/main/README/imgHome.png",
+      "LiveLink": null,
+      "Featured": false
+    },
+    {
+      "Title": "Portfolio",
+      "Description": "My portfolio is a platform designed to facilitate communication and showcase my projects. Inspired by Brittany Chiang's design, it was completely written and developed by me. It aims to provide a clear and engaging overview of my work, skills, and experiences.",
+      "Technologies": ["React", "Node.js", "CSS", "Express"],
+      "GitLink": "https://github.com/GeisielMelo/Portfolio",
+      "ImageLink": "https://img001.prntscr.com/file/img001/Te2QHnGOQKqGJKhLkMgNfg.png",
+      "LiveLink": "https://geisielmelo.netlify.app/",
+      "Featured": true
+    },
+    {
+      "Title": "LandingPage",
+      "Description": "This project consists of a Landing Page created using only HTML and CSS, with 6 sections, an animated menu, and fully responsive design.",
+      "Technologies": ["JavaScript", "CSS", "HTML"],
+      "GitLink": "https://github.com/GeisielMelo/LandingPage",
+      "ImageLink": "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
+      "LiveLink": "https://landingpagegeisielmelo.netlify.app",
+      "Featured": false
+    },
+    {
+      "Title": "TinDog",
+      "Description": "In this project, the goal is to create a landing page using the Bootstrap framework that will showcase the mobile app 'TinDog, a 'Tinder' designed specifically for dogs.",
+      "Technologies": ["JavaScript", "CSS", "HTML", "Bootstrap"],
+      "GitLink": "https://github.com/GeisielMelo/Tinder-for-Dogs",
+      "ImageLink": "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
+      "LiveLink": "https://htmlpreview.github.io/?https://github.com/GeisielMelo/Tinder-for-Dogs/blob/main/index.html",
+      "Featured": false
+    },
+    {
+      "Title": "E-commerce",
+      "Description": "This project is an e-commerce website built using Django, HTML, CSS, JavaScript, and Python. The website allows users to browse products, add them to their cart, and complete a checkout process. The project also includes an admin panel for managing products, orders, and users.",
+      "Technologies": ["Python", "Django", "HTML", "CSS"],
+      "GitLink": "https://github.com/GeisielMelo/E-commerce",
+      "ImageLink": "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
+      "LiveLink": null,
+      "Featured": false
+    },
+    {
+      "Title": "Simon-Game",
+      "Description": "Every time you successfully reproduce the sequence, the game will become more challenging, adding more elements to the sequence. But be careful, if you make a mistake, the game will end and you will have to start over.",
+      "Technologies": ["JavaScript", "CSS", "HTML"],
+      "GitLink": "https://github.com/GeisielMelo/Simon-Game",
+      "ImageLink": "https://github.com/GeisielMelo/Simon-Game/raw/main/readme.png",
+      "LiveLink": "https://htmlpreview.github.io/?https://github.com/GeisielMelo/Simon-Game/blob/main/index.html",
+      "Featured": false
+    },
+    {
+      "Title": "Drum",
+      "Description": "Drum is a simple virtual drum app built using HTML, CSS, and JavaScript. With seven different pieces to choose from, including bass drum, snare drum, hi-hat, tom, cymbal, floor tom, and cowbell, you can play the drums using your keyboard or mouse.",
+      "Technologies": ["JavaScript", "CSS", "HTML"],
+      "GitLink": "https://github.com/GeisielMelo/Drum",
+      "ImageLink": "https://github.com/GeisielMelo/Drum/raw/main/readme.png",
+      "LiveLink": "https://htmlpreview.github.io/?https://github.com/GeisielMelo/Drum/blob/main/index.html",
+      "Featured": false
+    },
+    {
+      "Title": "Calculator",
+      "Description": "Designed to handle complex mathematical functions with ease, making it the perfect tool for students.",
+      "Technologies": ["JavaScript", "CSS", "HTML"],
+      "GitLink": "https://github.com/GeisielMelo/Calculator",
+      "ImageLink": "https://github.com/GeisielMelo/Calculator/raw/main/imgCalculator.png",
+      "LiveLink": "https://htmlpreview.github.io/?https://github.com/GeisielMelo/Calculator/blob/main/index.html",
+      "Featured": false
+    },
+    {
+      "Title": "SplashScreen",
+      "Description": "This Circular Splash Screen is designed to check the existence of certain files and create them if they don't exist to ensure proper system functionality. During the verification process, a circular animation will spin on the screen to indicate that the system is being checked and to keep users informed of the verification progress.",
+      "Technologies": ["Python", "PySide6", "SQLite", "CSS"],
+      "GitLink": "https://github.com/GeisielMelo/SplashScreen",
+      "ImageLink": "https://raw.githubusercontent.com/GeisielMelo/SplashScreen/main/Screenshot.png",
+      "LiveLink": null,
+      "Featured": false
+    },
+    {
+      "Title": "EasySchedule",
+      "Description": "EasySchedule is a user-friendly scheduling application designed to simplify the process of managing appointments and tasks. With a clean and intuitive interface, it allows users to easily create, organize, and track their schedules.",
+      "Technologies": ["Python", "PySide6", "MySQL", "CSS"],
+      "GitLink": "https://github.com/GeisielMelo/EasySchedule",
+      "ImageLink": "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
+      "LiveLink": null,
+      "Featured": false
+    }
   ]
 }
