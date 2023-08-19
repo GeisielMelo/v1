@@ -64,7 +64,7 @@ const Item = styled.li`
   }
   @media (max-width: 1068px) {
     border-left: none;
-    padding:  5px;
+    padding: 5px;
     margin: 5px;
     border-bottom: 2px solid ${(props) => props.theme.color.Slate.default};
   }
@@ -81,6 +81,7 @@ const Preview = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 100%;
+  box-shadow: 0 1px 5px rgba(2, 12, 27, 0.7);
 `;
 
 const Description = styled.div`
@@ -140,6 +141,7 @@ const Buttons = styled.div`
   }
 `;
 
+
 const Featured = ({ settings, data }) => {
   const [previewData, setPreviewData] = useState(null);
   const isFeatured = (item) => item.Featured === true;
@@ -170,6 +172,7 @@ const Featured = ({ settings, data }) => {
         </Menu>
         <Preview>
           <Image src={previewData?.ImageLink} />
+
           <Description>
             <DescriptionText>{previewData?.Description}</DescriptionText>
             <DescriptionTech>
