@@ -7,32 +7,61 @@ import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import { fetchData } from "../utils/fetchData";
 import { Wrapper } from "../components/Wrapper";
+import { VerticalBoxLeft, VerticalBoxRight } from "../components/VerticalBox";
+import { Loading } from "../components/Loading";
 
 const Index = () => {
   const [data, setData] = useState(null);
   const [language, setLanguage] = useState("enUS");
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      const response = fetchData(language);
-      setData(response);
-    } catch (error) {
-      console.log(error);
-    }
+    const fetchInitialData = async () => {
+      try {
+        setLoading(true);
+        const response = await fetchData(language);
+        setData(response);
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
+      } catch (error) {
+        console.log(error);
+        setLoading(false);
+      }
+    };
+
+    fetchInitialData();
   }, [language]);
 
-  return data ? (
+  const handleChangeLanguage = () => {
+    const newLanguage = language === "enUS" ? "ptBR" : "enUS";
+    localStorage.setItem("language", JSON.stringify(newLanguage));
+    setLanguage(newLanguage);
+  };
+
+  return (
     <Wrapper>
-      <Hero settings={data.Hero} />
-      <About settings={data.About} tech={data.Technologies} />
-      <Featured settings={data.Featured} data={data.Data} />
-      <Projects settings={data.Projects} />
-      <Contact settings={data.Contact} />
-      <Footer name={data.Hero.Name}/>
+      {loading ? (
+        <Loading />
+      ) : (
+        data && (
+          <>
+            <Hero settings={data.Hero} />
+            <About settings={data.About} tech={data.Technologies} />
+            <Featured settings={data.Featured} data={data.Data} />
+            <Projects settings={data.Projects} data={data.Data} />
+            <Contact settings={data.Contact} />
+            <VerticalBoxLeft media={data.Media} />
+            <VerticalBoxRight
+              media={data.Media}
+              translate={handleChangeLanguage}
+            />
+            <Footer name={data.Hero.Name} />
+          </>
+        )
+      )}
     </Wrapper>
-  ) : (
-    <p>Loading...</p>
-  )
-}
+  );
+};
 
 export default Index;
