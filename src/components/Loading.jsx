@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  margin-top: 50vh;
   width: ${(props) => props.maxWidth || "25px"};
   height: ${(props) => props.maxHeight || "25px"};
+  border-radius: 50%;
 `;
 
 const Spinner = styled.div`
