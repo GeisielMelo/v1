@@ -4,6 +4,7 @@ export const theme = {
       default: "#0a192f",
       Light: "#112240",
       Lightest: "#233554",
+      Transparent: "rgba(17, 34, 64, 0.75)",
     },
     Slate: {
       default: "#8892b0",
