@@ -8,6 +8,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 100px;
+  margin-top: 100px;
 `;
 
 const Copy = styled.p`
