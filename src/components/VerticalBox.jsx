@@ -1,35 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import TranslateIcon from "@mui/icons-material/Translate";
 
-const LeftBox = styled.div`
+const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 20px;
-  width: 45px;
-  height: 300px;
+  gap: 10px;
+  padding: 5px;
+  height: 100px;
 `;
 
-const RightBox = styled.div`
+const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   position: fixed;
   bottom: 0;
-  right: 20px;
   width: 45px;
   height: 300px;
+  ${(props) => (props.direction === "left" ? "left: 20px" : "right: 20px")};
 `;
 
 const Button = styled.button`
-  width: 100%;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
   margin: 2px;
   cursor: pointer;
   background: none;
@@ -51,39 +52,65 @@ const Line = styled.div`
   margin-top: 20px;
 `;
 
-export const VerticalBoxLeft = ({ media }) => {
+export const VerticalBox = ({ media, translate }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleContactClick = (email) => {
+    window.location.href = `mailto:${email}`;
+  };
+
   const handleButtonClick = (link) => {
     window.open(link, "_blank");
   };
 
-  return (
-    <LeftBox>
+  return isMobile ? (
+    <Container>
       <Button onClick={() => handleButtonClick(media.GitHub)}>
         <GitHubIcon />
       </Button>
       <Button onClick={() => handleButtonClick(media.LinkedIn)}>
         <LinkedInIcon />
       </Button>
-
-      <Line />
-    </LeftBox>
-  );
-};
-
-export const VerticalBoxRight = ({ media, translate }) => {
-  const handleContactClick = (email) => {
-    window.location.href = `mailto:${email}`;
-  };
-  return (
-    <RightBox>
       <Button title="Português / English" onClick={translate}>
         <TranslateIcon />
       </Button>
-
       <Button onClick={() => handleContactClick(media.Email)}>
         <EmailIcon />
       </Button>
-      <Line />
-    </RightBox>
+    </Container>
+  ) : (
+    <>
+      <Box direction={"left"}>
+        <Button onClick={() => handleButtonClick(media.GitHub)}>
+          <GitHubIcon />
+        </Button>
+        <Button onClick={() => handleButtonClick(media.LinkedIn)}>
+          <LinkedInIcon />
+        </Button>
+        <Line />
+      </Box>
+
+      <Box direction={"right"}>
+        <Button title="Português / English" onClick={translate}>
+          <TranslateIcon />
+        </Button>
+        <Button onClick={() => handleContactClick(media.Email)}>
+          <EmailIcon />
+        </Button>
+        <Line />
+      </Box>
+    </>
   );
 };

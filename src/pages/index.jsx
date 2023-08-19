@@ -7,7 +7,7 @@ import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import { fetchData } from "../utils/fetchData";
 import { Wrapper } from "../components/Wrapper";
-import { VerticalBoxLeft, VerticalBoxRight } from "../components/VerticalBox";
+import { VerticalBox } from "../components/VerticalBox";
 import { Loading } from "../components/Loading";
 
 const Index = () => {
@@ -16,31 +16,29 @@ const Index = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchInitialData = async () => {
+    const fetchDataAsync = async () => {
       try {
         setLoading(true);
         const response = await fetchData(language);
         setData(response);
-        setTimeout(() => {
-          setLoading(false);
-        }, 1000);
+        setTimeout(() => setLoading(false), 1000);
       } catch (error) {
         console.log(error);
         setLoading(false);
       }
     };
 
-    fetchInitialData();
+    fetchDataAsync();
   }, [language]);
 
-  const handleChangeLanguage = () => {
+  const handleLanguage = () => {
     const newLanguage = language === "enUS" ? "ptBR" : "enUS";
     localStorage.setItem("language", JSON.stringify(newLanguage));
     setLanguage(newLanguage);
   };
 
   return (
-    <Wrapper>
+    <Wrapper loading={loading}>
       {loading ? (
         <Loading />
       ) : (
@@ -51,11 +49,7 @@ const Index = () => {
             <Featured settings={data.Featured} data={data.Data} />
             <Projects settings={data.Projects} data={data.Data} />
             <Contact settings={data.Contact} />
-            <VerticalBoxLeft media={data.Media} />
-            <VerticalBoxRight
-              media={data.Media}
-              translate={handleChangeLanguage}
-            />
+            <VerticalBox media={data.Media} translate={handleLanguage} />
             <Footer name={data.Hero.Name} />
           </>
         )
