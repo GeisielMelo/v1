@@ -5,5 +5,5 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: ${(props) => (props.loading ? "100vh" : "auto")};
+  height: ${(props) => (props.loading === "true" ? "100vh" : "auto")};
 `;

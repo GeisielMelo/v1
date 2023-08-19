@@ -13,7 +13,7 @@ import { Loading } from "../components/Loading";
 const Index = () => {
   const [data, setData] = useState(null);
   const [language, setLanguage] = useState("enUS");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchDataAsync = async () => {
@@ -38,7 +38,8 @@ const Index = () => {
   };
 
   return (
-    <Wrapper loading={loading}>
+    <Wrapper loading={loading.toString()}>
+
       {loading ? (
         <Loading />
       ) : (
