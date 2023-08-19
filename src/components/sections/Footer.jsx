@@ -9,6 +9,9 @@ const Container = styled.div`
   width: 100%;
   height: 100px;
   margin-top: 100px;
+  @media (max-width: 769px) {
+    margin-top: 0px;
+  }
 `;
 
 const Copy = styled.p`

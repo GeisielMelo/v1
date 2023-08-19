@@ -10,7 +10,10 @@ const Section = styled.section`
   padding: 100px 0px;
   margin: 0 100px;
   max-width: 600px;
-  width: 100%;
+  
+  @media (max-width: 1068px) {
+    margin: 0 50px;
+  }
 `;
 
 const Title = styled.p`

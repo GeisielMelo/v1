@@ -11,11 +11,9 @@ const Section = styled.section`
   padding: 100px 0px;
   margin: 0 100px;
   max-width: 1000px;
-  width: 100%;
 
-  @media (max-width: 1068px) {
-    padding: 100px 50px;
-    max-width: 760px;
+  @media (max-width: 769px) {
+    margin: 0 50px;
   }
 `;
 
@@ -40,12 +38,9 @@ const Subtitle = styled.h2`
 
 const Cards = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  @media (max-width: 1068px) {
-    justify-content: center;
-  }
 `;
 
 const Button = styled.button`

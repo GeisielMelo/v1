@@ -7,16 +7,19 @@ import FolderIcon from "@mui/icons-material/Folder";
 const Container = styled.div`
   position: relative;
   max-width: 325px;
-  height: 350px;
+  height: auto;
   width: 100%;
   padding: 20px;
   background: ${(props) => props.theme.color.Navy.Light};
   border-radius: 4px;
   box-shadow: 0 1px 5px rgba(2, 12, 27, 0.7);
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 860px) and (min-width: 611px) {
+    max-width: 250px;
+  }
+
+  @media (max-width: 610px) {
     max-width: 760px;
-    height: auto;
   }
 `;
 

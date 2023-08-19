@@ -9,11 +9,12 @@ const Section = styled.section`
   margin: 0 100px;
   padding: 100px 0px;
   max-width: 1000px;
-  width: 100%;
   height: 100vh;
+  width: calc(100% - 200px);
 
-  @media (max-width: 1068px) {
-    padding: 100px 50px;
+  @media (max-width: 769px) {
+    margin: 0 50px;
+    width: calc(100% - 100px);
   }
 `;
 
