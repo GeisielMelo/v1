@@ -1,11 +1,11 @@
 import enUS from '../languages/enUS.json';
 import ptBR from '../languages/ptBR.json';
 
-const fetchData = (language) => {
+const fetchData = async (language) => {
   switch (language) {
-    case 'pt-br':
+    case 'ptBR':
       return ptBR;
-    case 'en-us':
+    case 'enUS':
       return enUS;
     default:
       return enUS;
