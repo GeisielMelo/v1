@@ -2,45 +2,45 @@
   "Nav": {
     "Menu": [
       {
-        "Name": "About",
+        "Name": "Sobre",
         "Link": "#about"
       },
       {
-        "Name": "Featured",
+        "Name": "Destaque",
         "Link": "#featured"
       },
       {
-        "Name": "Projects",
+        "Name": "Projetos",
         "Link": "#projects"
       },
       {
-        "Name": "Contact",
+        "Name": "Contato",
         "Link": "#contact"
       }
     ],
-    "Buttons": [
+    "Botões": [
       {
-        "Name": "Resume",
+        "Name": "Currículo",
         "Link": "https://www.linkedin.com/in/geisiel-nascimento-858346265"
       }
     ]
   },
   "Hero": {
-    "Title": "Hi, my name is",
+    "Title": "Oi, meu nome é",
     "Name": "Geisiel Melo",
-    "Description": "I build web applications.",
-    "Introduction": "I'm a software engineer with experience in web application development. I'm currently seeking new opportunities to apply my skills and knowledge. With a special focus on creating accessible and user-centric solutions, I am committed to building products that stand out and provide amazing experiences for users."
+    "Description": "Eu construo aplicações web.",
+    "Introduction": "Eu sou um engenheiro de software com experiência em desenvolvimento de aplicações web. Atualmente, estou em busca de novas oportunidades para aplicar minhas habilidades e conhecimentos. Com um foco especial em criar soluções acessíveis e centradas no usuário, estou comprometido em construir produtos que se destaquem e proporcionem experiências incríveis para os usuários."
   },
   "About": {
-    "Title": "About Me",
-    "Bio": "Hello, I'm Geisiel Melo, and I love coding and problem-solving. My programming journey began with configuring custom mods and servers for online games, bringing enjoyment to my friends and me. Over time, I ventured into creating scripts to automate tasks and eventually developed full-fledged applications for complex challenges.",
-    "Experience": "As I delved into app development, I discovered my passion for creating solutions that benefit others. This led me to focus on web application development, aiming to provide accessible and user-friendly experiences to a broader audience.",
-    "Conclusion": "Sharing my applications and witnessing how they simplify people's lives motivates me greatly. I firmly believe in the positive impact of technology on society, and I'm dedicated to crafting intuitive, efficient, and enjoyable web applications.",
+    "Title": "Sobre Mim",
+    "Bio": "Olá, eu sou Geisiel Melo e adoro programar e resolver problemas. Minha jornada de programação começou com a configuração de mods e servidores personalizados para jogos online, trazendo diversão para mim e meus amigos. Com o tempo, me aventurei na criação de scripts para automatizar tarefas e eventualmente desenvolvi aplicativos completos para desafios complexos.",
+    "Experience": "Ao me aprofundar no desenvolvimento de aplicativos, descobri minha paixão por criar soluções que beneficiam outras pessoas. Isso me levou a focar no desenvolvimento de aplicações web, visando proporcionar experiências acessíveis e amigáveis a um público mais amplo.",
+    "Conclusion": "Compartilhar meus aplicativos e testemunhar como eles simplificam a vida das pessoas me motiva muito. Eu acredito firmemente no impacto positivo da tecnologia na sociedade e estou dedicado a criar aplicações web intuitivas, eficientes e agradáveis.",
     "Image": "https://img001.prntscr.com/file/img001/Xdu4Rry7Tjy-JJOSXbVs0g.jpeg",
-    "ImageDescription": "a male person"
+    "ImageDescription": "uma pessoa do sexo masculino"
   },
   "Technologies": {
-    "Title": "Here are some of the technologies I've worked with:",
+    "Title": "Aqui estão algumas das tecnologias com as quais trabalhei:",
     "Tech": [
       "JavaScript",
       "NodeJS",
@@ -52,38 +52,31 @@
     ]
   },
   "Featured": {
-    "Title": "Featured Projects"
+    "Title": "Projetos em Destaque"
   },
   "Projects": {
-    "Title": "Other Noteworthy Projects",
-    "Subtitle": "Take a look!",
-    "Button": "See More"
+    "Title": "Outros Projetos Notáveis",
+    "Subtitle": "Dê uma olhada!",
+    "ButtonMore": "Ver Mais",
+    "ButtonLess": "Esconder"
   },
   "Contact": {
-    "Subtitle": "Contact Me",
-    "Title": "Let's work together!",
-    "Message": "Hey there! As a junior developer, I'm on the lookout for exciting new opportunities. If you have any questions, inquiries, or if you're interested in collaborating on a project, don't hesitate to reach out. My inbox is always open, and I'd love to chat and explore how we can work together!",
+    "Subtitle": "Entre em Contato",
+    "Title": "Vamos Trabalhar Juntos!",
+    "Message": "Olá! Como desenvolvedor júnior, estou em busca de novas oportunidades empolgantes. Se você tiver alguma pergunta, consulta ou se estiver interessado em colaborar em um projeto, não hesite em entrar em contato. Minha caixa de entrada está sempre aberta e adoraria conversar e explorar como podemos trabalhar juntos!",
     "Email": "geisiel.nascimento@gmail.com",
-    "ButtonText": "Say Hello!"
+    "ButtonText": "Diga Olá!"
   },
-  "BottomButtons": [
+  "Media": 
     {
-      "Name": "GitHub",
-      "Link": "https://github.com/geisielmelo"
+      "GitHub": "https://github.com/geisielmelo",
+      "LinkedIn": "https://www.linkedin.com/in/geisiel-nascimento-858346265",
+      "Email": "mailto:geisiel.nascimento@gmail.com"
     },
-    {
-      "Name": "LinkedIn",
-      "Link": "https://www.linkedin.com/in/geisiel-nascimento-858346265"
-    },
-    {
-      "Name": "Email",
-      "Link": "mailto:geisiel.nascimento@gmail.com"
-    }
-  ],
   "Data": [
     {
       "Title": "Reminders",
-      "Description": "A practical note-taking app inspired by Google Keep that helps you keep your tasks and appointments organized.",
+      "Description": "Um aplicativo prático de anotações inspirado no Google Keep que ajuda você a organizar suas tarefas e compromissos.",
       "Technologies": ["React", "Node.js", "MongoDB", "Axios"],
       "GitLink": "https://github.com/GeisielMelo/reminders",
       "ImageLink": "https://img001.prntscr.com/file/img001/-vheMMlIQYmFefa_IeL9YA.png",
@@ -92,7 +85,7 @@
     },
     {
       "Title": "Reminders API",
-      "Description": "Reminders API is a backend server designed specifically for the Reminders application. It handles the storage and retrieval of data, utilizing the MongoDB database hosted on Atlas. It seamlessly integrates with the frontend application, enabling users to create, update, and retrieve their data effortlessly.",
+      "Description": "A Reminders API é um servidor backend projetado especificamente para o aplicativo Reminders. Ele lida com o armazenamento e a recuperação de dados, utilizando o banco de dados MongoDB hospedado no Atlas. Ele integra-se perfeitamente com o aplicativo frontend, permitindo que os usuários criem, atualizem e recuperem seus dados com facilidade.",
       "Technologies": ["React", "Node.js", "MongoDB", "Express"],
       "GitLink": "https://github.com/GeisielMelo/reminders-api",
       "ImageLink": "https://img001.prntscr.com/file/img001/QsJpQFvsRICcKfkGZ5r3RA.png",
@@ -101,7 +94,7 @@
     },
     {
       "Title": "E-mail Marketing",
-      "Description": "This is a application that receives user data and saves it directly to a Mailchimp database, aiming to simplify and streamline the process of creating and sending email marketing campaigns.",
+      "Description": "Este é um aplicativo que recebe dados do usuário e os salva diretamente em um banco de dados do Mailchimp, com o objetivo de simplificar e agilizar o processo de criação e envio de campanhas de e-mail marketing.",
       "Technologies": ["Bootstrap", "Express", "Node", "CSS"],
       "GitLink": "https://github.com/GeisielMelo/Email-Marketing",
       "ImageLink": "https://github.com/GeisielMelo/Email-Marketing/raw/main/README/imgHome.png",
@@ -110,16 +103,16 @@
     },
     {
       "Title": "Portfolio",
-      "Description": "My portfolio is a platform designed to facilitate communication and showcase my projects. Inspired by Brittany Chiang's design, it was completely written and developed by me. It aims to provide a clear and engaging overview of my work, skills, and experiences.",
+      "Description": "Meu portfólio é uma plataforma projetada para facilitar a comunicação e mostrar meus projetos. Inspirado no design de Brittany Chiang, ele foi completamente escrito e desenvolvido por mim. Tem como objetivo fornecer uma visão clara e envolvente do meu trabalho, habilidades e experiências.",
       "Technologies": ["React", "Node.js", "CSS", "Express"],
       "GitLink": "https://github.com/GeisielMelo/Portfolio",
       "ImageLink": "https://img001.prntscr.com/file/img001/Te2QHnGOQKqGJKhLkMgNfg.png",
-      "LiveLink": null,
+      "LiveLink": "https://geisielmelo.netlify.app/",
       "Featured": true
     },
     {
       "Title": "LandingPage",
-      "Description": "This project consists of a Landing Page created using only HTML and CSS, with 6 sections, an animated menu, and fully responsive design.",
+      "Description": "Este projeto consiste em uma Landing Page criada usando apenas HTML e CSS, com 6 seções, um menu animado e design totalmente responsivo.",
       "Technologies": ["JavaScript", "CSS", "HTML"],
       "GitLink": "https://github.com/GeisielMelo/LandingPage",
       "ImageLink": "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -128,7 +121,7 @@
     },
     {
       "Title": "TinDog",
-      "Description": "In this project, the goal is to create a landing page using the Bootstrap framework that will showcase the mobile app 'TinDog, a 'Tinder' designed specifically for dogs.",
+      "Description": "Neste projeto, o objetivo é criar uma página de destino usando o framework Bootstrap que apresentará o aplicativo móvel 'TinDog', um 'Tinder' projetado especificamente para cães.",
       "Technologies": ["JavaScript", "CSS", "HTML", "Bootstrap"],
       "GitLink": "https://github.com/GeisielMelo/Tinder-for-Dogs",
       "ImageLink": "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -137,7 +130,7 @@
     },
     {
       "Title": "E-commerce",
-      "Description": "This project is an e-commerce website built using Django, HTML, CSS, JavaScript, and Python. The website allows users to browse products, add them to their cart, and complete a checkout process. The project also includes an admin panel for managing products, orders, and users.",
+      "Description": "Este projeto é um site de comércio eletrônico construído usando Django, HTML, CSS, JavaScript e Python. O site permite que os usuários naveguem pelos produtos, os adicionem ao carrinho e concluam o processo de checkout. O projeto também inclui um painel de administração para gerenciar produtos, pedidos e usuários.",
       "Technologies": ["Python", "Django", "HTML", "CSS"],
       "GitLink": "https://github.com/GeisielMelo/E-commerce",
       "ImageLink": "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",
@@ -146,7 +139,7 @@
     },
     {
       "Title": "Simon-Game",
-      "Description": "Every time you successfully reproduce the sequence, the game will become more challenging, adding more elements to the sequence. But be careful, if you make a mistake, the game will end and you will have to start over.",
+      "Description": "Cada vez que você reproduzir com sucesso a sequência, o jogo se tornará mais desafiador, adicionando mais elementos à sequência. Mas cuidado, se você cometer um erro, o jogo terminará e você terá que começar novamente.",
       "Technologies": ["JavaScript", "CSS", "HTML"],
       "GitLink": "https://github.com/GeisielMelo/Simon-Game",
       "ImageLink": "https://github.com/GeisielMelo/Simon-Game/raw/main/readme.png",
@@ -155,7 +148,7 @@
     },
     {
       "Title": "Drum",
-      "Description": "Drum is a simple virtual drum app built using HTML, CSS, and JavaScript. With seven different pieces to choose from, including bass drum, snare drum, hi-hat, tom, cymbal, floor tom, and cowbell, you can play the drums using your keyboard or mouse.",
+      "Description": "Drum é um simples aplicativo de bateria virtual construído usando HTML, CSS e JavaScript. Com sete peças diferentes para escolher, incluindo bumbo, caixa, chimbal, tom, prato, tom de chão e cowbell, você pode tocar a bateria usando seu teclado ou mouse.",
       "Technologies": ["JavaScript", "CSS", "HTML"],
       "GitLink": "https://github.com/GeisielMelo/Drum",
       "ImageLink": "https://github.com/GeisielMelo/Drum/raw/main/readme.png",
@@ -164,7 +157,7 @@
     },
     {
       "Title": "Calculator",
-      "Description": "Designed to handle complex mathematical functions with ease, making it the perfect tool for students.",
+      "Description": "Projetada para lidar com funções matemáticas complexas com facilidade, tornando-a a ferramenta perfeita para estudantes.",
       "Technologies": ["JavaScript", "CSS", "HTML"],
       "GitLink": "https://github.com/GeisielMelo/Calculator",
       "ImageLink": "https://github.com/GeisielMelo/Calculator/raw/main/imgCalculator.png",
@@ -173,7 +166,7 @@
     },
     {
       "Title": "SplashScreen",
-      "Description": "This Circular Splash Screen is designed to check the existence of certain files and create them if they don't exist to ensure proper system functionality. During the verification process, a circular animation will spin on the screen to indicate that the system is being checked and to keep users informed of the verification progress.",
+      "Description": "Esta Circular Splash Screen é projetada para verificar a existência de determinados arquivos e criá-los se eles não existirem para garantir a funcionalidade adequada do sistema. Durante o processo de verificação, uma animação circular girará na tela para indicar que o sistema está sendo verificado e para manter os usuários informados sobre o progresso da verificação.",
       "Technologies": ["Python", "PySide6", "SQLite", "CSS"],
       "GitLink": "https://github.com/GeisielMelo/SplashScreen",
       "ImageLink": "https://raw.githubusercontent.com/GeisielMelo/SplashScreen/main/Screenshot.png",
@@ -182,7 +175,7 @@
     },
     {
       "Title": "EasySchedule",
-      "Description": "EasySchedule is a user-friendly scheduling application designed to simplify the process of managing appointments and tasks. With a clean and intuitive interface, it allows users to easily create, organize, and track their schedules.",
+      "Description": "O EasySchedule é um aplicativo de agendamento fácil de usar, projetado para simplificar o processo de gerenciamento de compromissos e tarefas. Com uma interface limpa e intuitiva, ele permite que os usuários criem, organizem e acompanhem facilmente seus horários.",
       "Technologies": ["Python", "PySide6", "MySQL", "CSS"],
       "GitLink": "https://github.com/GeisielMelo/EasySchedule",
       "ImageLink": "https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg",

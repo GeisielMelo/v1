@@ -57,7 +57,8 @@
   "Projects": {
     "Title": "Other Noteworthy Projects",
     "Subtitle": "Take a look!",
-    "Button": "See More"
+    "ButtonMore": "See More",
+    "ButtonLess": "Hide"
   },
   "Contact": {
     "Subtitle": "Contact Me",
@@ -66,20 +67,12 @@
     "Email": "geisiel.nascimento@gmail.com",
     "ButtonText": "Say Hello!"
   },
-  "BottomButtons": [
+  "Media": 
     {
-      "Name": "GitHub",
-      "Link": "https://github.com/geisielmelo"
+      "GitHub": "https://github.com/geisielmelo",
+      "LinkedIn": "https://www.linkedin.com/in/geisiel-nascimento-858346265",
+      "Email": "mailto:geisiel.nascimento@gmail.com"
     },
-    {
-      "Name": "LinkedIn",
-      "Link": "https://www.linkedin.com/in/geisiel-nascimento-858346265"
-    },
-    {
-      "Name": "Email",
-      "Link": "mailto:geisiel.nascimento@gmail.com"
-    }
-  ],
   "Data": [
     {
       "Title": "Reminders",
