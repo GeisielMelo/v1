@@ -3,7 +3,7 @@ import styled from "styled-components";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { Title } from "../Title";
 
 const Section = styled.section`
@@ -181,7 +181,7 @@ const Featured = ({ settings, data }) => {
   };
 
   return (
-    <Section>
+    <Section id={settings.iD}>
       <Title title={settings.Title} />
 
       <Container>
@@ -197,33 +197,30 @@ const Featured = ({ settings, data }) => {
 
         <Preview>
           <Image src={previewData?.ImageLink} />
-          
+
           {showDescription && (
-          <Description>
-            <DescriptionText>{previewData?.Description}</DescriptionText>
-            <DescriptionTech>
-              {previewData?.Technologies.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </DescriptionTech>
-            <Buttons>
-              {previewData?.LiveLink !== null && (
-                <button onClick={() => handleButtonClick(previewData.LiveLink)}>
-                  <OpenInNewIcon />
-                </button>
-              )}
-              {previewData?.GitLink !== null && (
-                <button onClick={() => handleButtonClick(previewData.GitLink)}>
-                  <GitHubIcon />
-                </button>
-              )}
-            </Buttons>
-          </Description>
+            <Description>
+              <DescriptionText>{previewData?.Description}</DescriptionText>
+              <DescriptionTech>
+                {previewData?.Technologies.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </DescriptionTech>
+              <Buttons>
+                {previewData?.LiveLink !== null && (
+                  <button onClick={() => handleButtonClick(previewData.LiveLink)}>
+                    <OpenInNewIcon />
+                  </button>
+                )}
+                {previewData?.GitLink !== null && (
+                  <button onClick={() => handleButtonClick(previewData.GitLink)}>
+                    <GitHubIcon />
+                  </button>
+                )}
+              </Buttons>
+            </Description>
           )}
-          <Visibility
-            onMouseEnter={() => setShowDescription(false)}
-            onMouseLeave={() => setShowDescription(true)}
-          >
+          <Visibility onMouseEnter={() => setShowDescription(false)} onMouseLeave={() => setShowDescription(true)}>
             {showDescription ? <VisibilityIcon /> : <VisibilityOffIcon />}
           </Visibility>
         </Preview>

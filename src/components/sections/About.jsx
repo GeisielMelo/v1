@@ -10,7 +10,7 @@ const Section = styled.section`
   margin: 0 100px;
   padding: 100px 0px;
   max-width: 850px;
-  
+
   @media (max-width: 769px) {
     margin: 0 50px;
   }
@@ -80,12 +80,12 @@ const TechStack = styled.ul`
 const Photo = styled.img`
   max-width: 255px;
   border-radius: 8px;
-  box-shadow: 4px 4px 10px ${(props) => props.theme.color.Green.default};;
+  box-shadow: 4px 4px 10px ${(props) => props.theme.color.Green.default};
 `;
 
 const About = ({ settings, tech }) => {
   return (
-    <Section>
+    <Section id={settings.iD}>
       <Title title={settings.Title} />
       <Container>
         <LeftContainer>

@@ -10,7 +10,7 @@ const Section = styled.section`
   padding: 100px 0px;
   margin: 0 100px;
   max-width: 600px;
-  
+
   @media (max-width: 1068px) {
     margin: 0 50px;
   }
@@ -60,7 +60,7 @@ const Contact = ({ settings }) => {
     window.location.href = `mailto:${settings.email}`;
   };
   return (
-    <Section>
+    <Section id={settings.iD}>
       <Title>{settings.Title}</Title>
       <Subtitle>{settings.Subtitle}</Subtitle>
       <Message>{settings.Message}</Message>

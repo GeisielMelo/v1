@@ -61,7 +61,7 @@ const Projects = ({ settings, data }) => {
   const [maxCards, setMaxCards] = useState(6);
 
   return (
-    <Section>
+    <Section id={settings.iD}>
       <Title>{settings.Title}</Title>
       <Subtitle>{settings.Subtitle}</Subtitle>
       <Cards>
@@ -77,9 +77,7 @@ const Projects = ({ settings, data }) => {
         ))}
       </Cards>
       {maxCards < data.length ? (
-        <Button onClick={() => setMaxCards(maxCards + 3)}>
-          {settings.ButtonMore}
-        </Button>
+        <Button onClick={() => setMaxCards(maxCards + 3)}>{settings.ButtonMore}</Button>
       ) : (
         <Button onClick={() => setMaxCards(6)}>{settings.ButtonLess}</Button>
       )}

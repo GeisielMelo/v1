@@ -54,7 +54,7 @@ const Introduction = styled.p`
 
 const Hero = ({ settings }) => {
   return (
-    <Section>
+    <Section id={settings.iD}>
       <Title>{settings.Title}</Title>
       <Name>{settings.Name}</Name>
       <Description>{settings.Description}</Description>
