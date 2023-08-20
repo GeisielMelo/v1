@@ -78,7 +78,6 @@ const Technologies = styled.ul`
 `;
 
 export const Card = ({ title, description, technologies, live, git }) => {
-  
   const handleButtonClick = (link) => {
     window.open(link, "_blank");
   };

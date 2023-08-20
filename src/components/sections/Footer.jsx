@@ -31,10 +31,7 @@ const Footer = ({ name }) => {
   const [showInspiration, setShowInspiration] = useState(false);
 
   return (
-    <Container
-      onMouseEnter={() => setShowInspiration(true)}
-      onMouseLeave={() => setShowInspiration(false)}
-    >
+    <Container onMouseEnter={() => setShowInspiration(true)} onMouseLeave={() => setShowInspiration(false)}>
       <Copy>© {name}</Copy>
       {showInspiration && <Inspiration>Inspired by @bchiang7</Inspiration>}
     </Container>
