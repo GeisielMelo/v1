@@ -1,6 +1,6 @@
 {
   "Nav": {
-    "Menu": [
+    "Pages": [
       {
         "Name": "About",
         "Link": "#about"
@@ -26,12 +26,14 @@
     ]
   },
   "Hero": {
+    "iD" : "hero",
     "Title": "Hi, my name is",
     "Name": "Geisiel Melo",
     "Description": "I build web applications.",
     "Introduction": "I'm a software engineer with experience in web application development. I'm currently seeking new opportunities to apply my skills and knowledge. With a special focus on creating accessible and user-centric solutions, I am committed to building products that stand out and provide amazing experiences for users."
   },
   "About": {
+    "iD" : "about",
     "Title": "About Me",
     "Bio": "Hello, I'm Geisiel Melo, and I love coding and problem-solving. My programming journey began with configuring custom mods and servers for online games, bringing enjoyment to my friends and me. Over time, I ventured into creating scripts to automate tasks and eventually developed full-fledged applications for complex challenges.",
     "Experience": "As I delved into app development, I discovered my passion for creating solutions that benefit others. This led me to focus on web application development, aiming to provide accessible and user-friendly experiences to a broader audience.",
@@ -52,15 +54,18 @@
     ]
   },
   "Featured": {
+    "iD" : "featured",
     "Title": "Featured Projects"
   },
   "Projects": {
+    "iD" : "projects",
     "Title": "Other Noteworthy Projects",
     "Subtitle": "Take a look!",
     "ButtonMore": "See More",
     "ButtonLess": "Hide"
   },
   "Contact": {
+    "iD" : "contact",
     "Subtitle": "Contact Me",
     "Title": "Let's work together!",
     "Message": "Hey there! As a junior developer, I'm on the lookout for exciting new opportunities. If you have any questions, inquiries, or if you're interested in collaborating on a project, don't hesitate to reach out. My inbox is always open, and I'd love to chat and explore how we can work together!",

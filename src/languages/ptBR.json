@@ -1,6 +1,6 @@
 {
   "Nav": {
-    "Menu": [
+    "Pages": [
       {
         "Name": "Sobre",
         "Link": "#about"
@@ -18,7 +18,7 @@
         "Link": "#contact"
       }
     ],
-    "Botões": [
+    "Buttons": [
       {
         "Name": "Currículo",
         "Link": "https://www.linkedin.com/in/geisiel-nascimento-858346265"
@@ -26,12 +26,14 @@
     ]
   },
   "Hero": {
+    "iD" : "hero",
     "Title": "Oi, meu nome é",
     "Name": "Geisiel Melo",
     "Description": "Eu construo aplicações web.",
     "Introduction": "Eu sou um engenheiro de software com experiência em desenvolvimento de aplicações web. Atualmente, estou em busca de novas oportunidades para aplicar minhas habilidades e conhecimentos. Com um foco especial em criar soluções acessíveis e centradas no usuário, estou comprometido em construir produtos que se destaquem e proporcionem experiências incríveis para os usuários."
   },
   "About": {
+    "iD" : "about",
     "Title": "Sobre Mim",
     "Bio": "Olá, eu sou Geisiel Melo e adoro programar e resolver problemas. Minha jornada de programação começou com a configuração de mods e servidores personalizados para jogos online, trazendo diversão para mim e meus amigos. Com o tempo, me aventurei na criação de scripts para automatizar tarefas e eventualmente desenvolvi aplicativos completos para desafios complexos.",
     "Experience": "Ao me aprofundar no desenvolvimento de aplicativos, descobri minha paixão por criar soluções que beneficiam outras pessoas. Isso me levou a focar no desenvolvimento de aplicações web, visando proporcionar experiências acessíveis e amigáveis a um público mais amplo.",
@@ -52,15 +54,18 @@
     ]
   },
   "Featured": {
+    "iD" : "featured",
     "Title": "Projetos em Destaque"
   },
   "Projects": {
+    "iD" : "projects",
     "Title": "Outros Projetos Notáveis",
     "Subtitle": "Dê uma olhada!",
     "ButtonMore": "Ver Mais",
     "ButtonLess": "Esconder"
   },
   "Contact": {
+    "iD" : "contact",
     "Subtitle": "Entre em Contato",
     "Title": "Vamos Trabalhar Juntos!",
     "Message": "Olá! Como desenvolvedor júnior, estou em busca de novas oportunidades empolgantes. Se você tiver alguma pergunta, consulta ou se estiver interessado em colaborar em um projeto, não hesite em entrar em contato. Minha caixa de entrada está sempre aberta e adoraria conversar e explorar como podemos trabalhar juntos!",
