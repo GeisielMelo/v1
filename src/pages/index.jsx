@@ -7,6 +7,7 @@ import Contact from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
 import { fetchData } from "../utils/fetchData";
 import { Wrapper } from "../components/Wrapper";
+import { Nav } from "../components/Nav";
 import { VerticalBox } from "../components/VerticalBox";
 import { Loading } from "../components/Loading";
 
@@ -14,6 +15,7 @@ const Index = () => {
   const [data, setData] = useState(null);
   const [language, setLanguage] = useState("enUS");
   const [loading, setLoading] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const fetchDataAsync = async () => {
@@ -31,6 +33,18 @@ const Index = () => {
     fetchDataAsync();
   }, [language]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 769);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const handleLanguage = () => {
     const newLanguage = language === "enUS" ? "ptBR" : "enUS";
     localStorage.setItem("language", JSON.stringify(newLanguage));
@@ -39,18 +53,18 @@ const Index = () => {
 
   return (
     <Wrapper loading={loading.toString()}>
-
       {loading ? (
         <Loading />
       ) : (
         data && (
           <>
+            <Nav settings={data.Nav} isMobile={isMobile} />
             <Hero settings={data.Hero} />
             <About settings={data.About} tech={data.Technologies} />
             <Featured settings={data.Featured} data={data.Data} />
             <Projects settings={data.Projects} data={data.Data} />
             <Contact settings={data.Contact} />
-            <VerticalBox media={data.Media} translate={handleLanguage} />
+            <VerticalBox media={data.Media} translate={handleLanguage} isMobile={isMobile} />
             <Footer name={data.Hero.Name} />
           </>
         )

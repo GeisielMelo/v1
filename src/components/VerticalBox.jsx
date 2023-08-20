@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -52,21 +52,7 @@ const Line = styled.div`
   margin-top: 20px;
 `;
 
-export const VerticalBox = ({ media, translate }) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 769);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+export const VerticalBox = ({ media, translate, isMobile }) => {
   const handleContactClick = (email) => {
     window.location.href = `mailto:${email}`;
   };
