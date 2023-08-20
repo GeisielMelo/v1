@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(90deg,
       ${(props) => props.theme.color.Navy.default},
