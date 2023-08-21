@@ -22,6 +22,7 @@ const Container = styled.div`
 const Logo = styled.img`
   max-width: 50px;
   max-height: 50px;
+  cursor: pointer;
 `;
 
 const Menu = styled.div`
@@ -44,8 +45,11 @@ const Pages = styled.ul`
 const Page = styled.li`
   padding: 12px 16px;
   color: ${(props) => props.theme.color.Slate.default};
+  cursor: pointer;
   &:hover {
     color: ${(props) => props.theme.color.Green.default};
+    border-bottom: 1px solid ${(props) => props.theme.color.Green.default};
+  
   }
 `;
 
