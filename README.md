@@ -15,8 +15,7 @@ My portfolio is a platform designed to facilitate communication and showcase my 
 
 - Node.js
 - React
-- HTML
-- CSS
+- Styled Components
 
 ## Setup
 
