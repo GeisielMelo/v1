@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { UpMotion } from "../Motion";
 
 const Section = styled.section`
   display: flex;
@@ -55,10 +56,23 @@ const Introduction = styled.p`
 const Hero = ({ settings }) => {
   return (
     <Section id={settings.iD}>
-      <Title>{settings.Title}</Title>
-      <Name>{settings.Name}</Name>
-      <Description>{settings.Description}</Description>
-      <Introduction>{settings.Introduction}</Introduction>
+
+      <UpMotion>
+        <Title>{settings.Title}</Title>
+      </UpMotion>
+
+      <UpMotion delay={0.2}>
+        <Name>{settings.Name}</Name>
+      </UpMotion>
+
+      <UpMotion delay={0.4}>
+        <Description>{settings.Description}</Description>
+      </UpMotion>
+
+      <UpMotion delay={0.6}>
+        <Introduction>{settings.Introduction}</Introduction>
+      </UpMotion>
+      
     </Section>
   );
 };
