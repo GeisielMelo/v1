@@ -3,11 +3,12 @@ import styled from "styled-components";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FolderIcon from "@mui/icons-material/Folder";
+import { OpacityMotion } from "./Motion";
 
 const Container = styled.div`
   position: relative;
   max-width: 325px;
-  height: auto;
+  height: 100%;
   width: 100%;
   padding: 20px;
   background: ${(props) => props.theme.color.Navy.Light};
@@ -83,34 +84,36 @@ export const Card = ({ title, description, technologies, live, git }) => {
   };
 
   return (
-    <Container>
-      <Header>
-        <Button>
-          <FolderIcon />
-        </Button>
-        <Buttons>
-          {live && (
-            <Button onClick={() => handleButtonClick(live)}>
-              <OpenInNewIcon />
-            </Button>
-          )}
+    <OpacityMotion delay={0.2}>
+      <Container>
+        <Header>
+          <Button>
+            <FolderIcon />
+          </Button>
+          <Buttons>
+            {live && (
+              <Button onClick={() => handleButtonClick(live)}>
+                <OpenInNewIcon />
+              </Button>
+            )}
 
-          {git && (
-            <Button onClick={() => handleButtonClick(git)}>
-              <GitHubIcon />
-            </Button>
-          )}
-        </Buttons>
-      </Header>
+            {git && (
+              <Button onClick={() => handleButtonClick(git)}>
+                <GitHubIcon />
+              </Button>
+            )}
+          </Buttons>
+        </Header>
 
-      <Title>{title}</Title>
-      <Description>{description}</Description>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
 
-      <Technologies>
-        {technologies.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </Technologies>
-    </Container>
+        <Technologies>
+          {technologies.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </Technologies>
+      </Container>
+    </OpacityMotion>
   );
 };
