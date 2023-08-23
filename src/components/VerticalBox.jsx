@@ -4,6 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import TranslateIcon from "@mui/icons-material/Translate";
+import { OpacityMotion } from "./Motion";
 
 const Container = styled.div`
   display: flex;
@@ -77,7 +78,7 @@ export const VerticalBox = ({ media, translate, isMobile }) => {
       </Button>
     </Container>
   ) : (
-    <>
+    <OpacityMotion delay={1}>
       <Box direction={"left"}>
         <Button onClick={() => handleButtonClick(media.GitHub)}>
           <GitHubIcon />
@@ -97,6 +98,6 @@ export const VerticalBox = ({ media, translate, isMobile }) => {
         </Button>
         <Line />
       </Box>
-    </>
+      </OpacityMotion>
   );
 };
