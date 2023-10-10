@@ -8,6 +8,7 @@ import { OpacityMotion } from "./Motion";
 const Container = styled.div`
   position: relative;
   max-width: 325px;
+  min-height: 350px;
   height: 100%;
   width: 100%;
   padding: 20px;
