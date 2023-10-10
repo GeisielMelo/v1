@@ -80,6 +80,24 @@
     },
   "Data": [
     {
+      "Title": "Maciel Eletricista",
+      "Description": "Dynamic landing page featuring a range of interactive elements and visually appealing design for an enjoyable end-user experience.",
+      "Technologies": ["React", "Node.js", "Styled Components", "EmailJS"],
+      "GitLink": null,
+      "ImageLink": null,
+      "LiveLink": "https://eletricista-maciel.netlify.app",
+      "Featured": false
+    },
+    {
+      "Title": "LoL Auth",
+      "Description": "Frontend and Backend login system based on the League of Legends client login theme, created during my free time to enhance my skills with React.",
+      "Technologies": ["React", "Node.js", "MongoDB", "Express"],
+      "GitLink": "https://github.com/GeisielMelo/lol-client-based-login-system",
+      "ImageLink": "https://raw.githubusercontent.com/GeisielMelo/lol-client-based-login-system/master/frontend/src/images/preview.png",
+      "LiveLink": null,
+      "Featured": true
+    },
+    {
       "Title": "Reminders",
       "Description": "A practical note-taking app inspired by Google Keep that helps you keep your tasks and appointments organized.",
       "Technologies": ["React", "Node.js", "MongoDB", "Axios"],
